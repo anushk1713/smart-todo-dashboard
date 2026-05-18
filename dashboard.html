@@ -1,0 +1,103 @@
+<!-- dashboard.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do Dashboard</title>
+
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="profile">
+        <img src="" alt="" />
+        <div class="text">
+          <span>Anush K</span>
+          <span>@virtueAK</span>
+        </div>
+      </div>
+
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="Search" />
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <div class="body">
+      <!-- SIDEBAR -->
+      <div class="leftbox">
+        <ul class="menu">
+          <li ><a href="index.html">Home</a></li>
+          <li class="active"><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="growth.html">Growth</a></li>
+          <li><a href="history.html">History</a></li>
+        </ul>
+
+        <div class="sidebar-bottom">
+          <div class="sidebar-card">
+            <h4>Today</h4>
+            <p>Tasks: <span id="sideTotal">0</span></p>
+            <p>Done: <span id="sideDone">0</span></p>
+          </div>
+
+          <div class="sidebar-card">
+            <h4>Streak</h4>
+            <p id="streak">🔥 0 Days</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CENTER -->
+      <div class="center">
+        <!-- GRAPH SECTION -->
+        <div class="graph_sec">
+          <div class="graph1">
+            Completion
+            <canvas id="myChart"></canvas>
+          </div>
+
+          <div class="graph1">
+            Weekly
+            <canvas id="weeklyChart"></canvas>
+          </div>
+
+          <div class="graph1">
+            Performance
+            <canvas id="performanceChart"></canvas>
+          </div>
+
+          <div class="graph1">
+            <h3>Monthly Skill</h3>
+
+            <canvas id="monthlyChart"></canvas>
+
+            <p id="monthlySkill">Monthly Skill: 0%</p>
+            <p id="monthlyGrowth">Growth: 0%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHART JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
