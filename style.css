@@ -25,6 +25,7 @@ html {
     color: #e0e0e0;
     height: calc(100vh - 60px);
     /* 🔥 adjust for navbar */
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 h1,
@@ -56,6 +57,11 @@ nav {
     width: 32px;
     height: 32px;
     border-radius: 50%;
+}
+
+.logo,
+.profile span:first-child{
+    font-family: 'Orbitron', sans-serif;
 }
 
 .text {
